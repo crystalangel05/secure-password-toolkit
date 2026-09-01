@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Password</title>
+  <link rel="stylesheet" href="../styling/generator.css">
+
+</head>
+<body>
+  <h2>Customize Your Password And Make It Your Own</h2>
+  <form id="passwordForm">
+    <label for="length">Password Length:</label>
+    <input type="number" id="length" name="length" min="4" max="60" value="12">
+    <label for="uppercase">Include Uppercase Letters:</label>
+    <input type="checkbox" id="uppercase" name="uppercase" checked>
+    <label for="lowercase">Include Lowercase Letters:</label>
+    <input type="checkbox" id="lowercase" name="lowercase" checked>
+    <label for="numbers">Include Numbers:</label>
+    <input type="checkbox" id="numbers" name="numbers" checked>
+    <label for="symbols">Include Symbols:</label>
+    <input type="checkbox" id="symbols" name="symbols" checked>
+    <button type="submit">Generate Password</button>
+
+    <div class="password-output">
+
+    <input 
+        type="text" 
+        id="generatedPassword" 
+        readonly
+        placeholder="Your password will appear here"
+    >
+
+    <button type="button" id="copyPassword" aria-label="Copy password">
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="20" 
+            height="20" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+        >
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+        </svg>
+    </button>
+
+</div>
+ 
+
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+  <script src="index.js" defer ></script>
+</body>
+</html>

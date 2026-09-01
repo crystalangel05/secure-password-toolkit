@@ -1,0 +1,66 @@
+body {
+  background-image: url("../images/lock8.jpeg");
+   font-family:Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#passwordForm {
+width:600px;
+height:370px;
+margin:90px auto;
+background-color: rgba(255, 255, 255, 0.8);
+padding:50px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top:80px;
+  color: rgb(224, 242, 181);
+  animation: titleGlow 2s ease-in-out infinite;
+  font-size: 30px;
+}
+
+@keyframes titleGlow {
+    0%, 100% {
+        text-shadow: 0 0 0px rgba(54, 55, 49, 0.5) ;
+    }
+
+    50% {
+        text-shadow: 0 0 15px rgba(115, 120, 104, 0.5);
+    }
+}
+
+
+
+.password-output {
+    position: relative;
+}
+
+#generatedPassword {
+   width: 100%;
+    padding-right: 50px; 
+    box-sizing: border-box;
+
+}
+
+#copyPassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius:10px;
+    padding:5px;
+}
+
