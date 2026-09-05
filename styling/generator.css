@@ -9,7 +9,7 @@ body {
 
 #passwordForm {
 width:600px;
-height:370px;
+height:420px;
 margin:90px auto;
 background-color: rgba(255, 255, 255, 0.8);
 padding:50px;
@@ -19,6 +19,8 @@ input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid aliceblue;
 }
 
 h2 {
@@ -64,3 +66,38 @@ h2 {
     padding:5px;
 }
 
+.generateBtn {
+    padding: 20px;
+    border-radius:20px;
+    border-color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.generateBtn:hover {
+  transform: scale(1.05);
+  opacity: 2.0;
+  color:rgb(232, 232, 128);
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.7);
+
+}
+
+#passwordForm label {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
